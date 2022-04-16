@@ -1,0 +1,12 @@
+<div mat-dialog-content>
+  <p>Escribe tu nombre</p>
+  <mat-form-field >
+    <mat-label>Tu nombre</mat-label>
+    <input matInput [(ngModel)]="data.nombreIngresado">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+
+  <button mat-raised-button color="primary" (click)="onNoClick()">Cancelar</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="data.nombreIngresado" cdkFocusInitial>Confirmar</button>
+</div>

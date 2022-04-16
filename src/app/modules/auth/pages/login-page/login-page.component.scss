@@ -1,0 +1,76 @@
+$color1: #fff;
+$color2: #FFD900;
+$color3: #000;
+$font-size-1: 1.2rem;
+.logIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+h1{
+    color: $color1;
+    
+}
+.message-error{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: red;
+    color: $color1;
+}
+.mat-raised-button.mat-primary{
+    width: 100%;
+    color: $color3;
+    background-color: $color2;
+    &:disabled{
+        opacity: .5;
+
+    }
+}
+
+//===================================================================
+//                      Input angular material
+//===================================================================
+
+::ng-deep .mat-form-field {
+    width: 100%;
+    font-size: $font-size-1;
+    
+    .mat-form-field-label {
+        color: $color1;
+    }
+    .mat-input-element {
+        color: $color1;
+    }
+    
+    .mat-form-field-underline {
+        background-color: $color1;
+    }
+    .mat-form-field-ripple {
+        background-color: $color1;
+    }
+    .mat-form-field-required-marker {
+        color: $color1;
+    }
+    &.mat-focused {
+        .mat-form-field-label {
+            color: $color2;
+        }
+        .mat-form-field-ripple {
+            background-color: $color2;
+        }
+        .mat-form-field-required-marker {
+            color: $color2 !important;
+        }
+        .mat-input-element {
+            color: $color2;
+        }
+    }
+}
+  

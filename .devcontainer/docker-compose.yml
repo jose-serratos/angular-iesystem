@@ -1,0 +1,10 @@
+version: "3"
+services:
+  client-angular-1:
+    build: .
+    image: ies_systems
+    ports:
+     - "4200:4200"
+    volumes:
+     - ./:/usr/src/app  
+    command: bash

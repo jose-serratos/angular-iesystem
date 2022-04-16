@@ -1,0 +1,24 @@
+$color1: #fff;
+$color2: #FFD900;
+$color3: #000;
+
+.space{
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+    flex-wrap: wrap;
+    background-color:$color3;
+}
+
+.mat-toolbar span {
+    color: $color2;
+}
+.mat-raised-button.mat-primary{
+    color: $color3;
+    background-color: $color2;
+    &:hover{
+        color: rgba(0, 0, 0, .7);
+    }
+}
+
+

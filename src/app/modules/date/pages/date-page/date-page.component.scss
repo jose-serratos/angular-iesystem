@@ -1,0 +1,87 @@
+$color1: #fff;
+$color2: #FFD900;
+$color3: #000;
+$font-size-1: 1.2rem;
+
+//===================================================================
+//                      Input angular material
+//===================================================================
+
+::ng-deep {
+    .mat-form-field-prefix .mat-icon-button, .mat-form-field-suffix .mat-icon-button {
+       color: $color1;
+    }
+    .mat-select-value-text {
+       color: $color1;
+    }
+    
+}
+
+::ng-deep .mat-form-field {
+    width: 100%;
+    font-size: $font-size-1;
+    
+    .mat-form-field-label {
+        color: $color1;
+    }
+    .mat-input-element {
+        color: $color1;
+    }
+    
+    .mat-form-field-underline {
+        background-color: $color1;
+    }
+    .mat-form-field-ripple {
+        background-color: $color1;
+    }
+    .mat-form-field-required-marker {
+        color: $color1;
+    }
+    &.mat-focused {
+        .mat-form-field-label {
+            color: $color2;
+        }
+        .mat-form-field-ripple {
+            background-color: $color2;
+        }
+        .mat-form-field-required-marker {
+            color: $color2 !important;
+        }
+        .mat-input-element {
+            color: $color2;
+        }
+    }
+}
+//===================================================================
+//                      Styles dates
+//===================================================================
+.container {
+    margin-top: 50px;
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 15px;
+}
+
+::ng-deep .mat-raised-button.mat-primary{
+    color: $color3;
+    background-color: $color2;
+    &:hover{
+        color: rgba(0, 0, 0, .7);
+    }
+}
+
+h4{
+    color: $color1;
+    
+}
+
+h4 span{
+    color: $color2;
+}
+
+.text-center{
+    text-align: center;
+}
+.sumit{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,110 @@
+$color1: #fff;
+$color2: #FFD900;
+$color3: #000;
+$font-size-1: 1.2rem;
+
+//===================================================================
+//                      Input angular material
+//===================================================================
+
+::ng-deep {
+    .mat-form-field-prefix .mat-icon-button, .mat-form-field-suffix .mat-icon-button {
+       color: $color1;
+    }
+    .mat-select-value-text {
+       color: $color1;
+    }
+    
+}
+
+::ng-deep .mat-form-field {
+    width: 100%;
+    font-size: $font-size-1;
+    
+    .mat-form-field-label {
+        color: $color1;
+    }
+    .mat-input-element {
+        color: $color1;
+    }
+    
+    .mat-form-field-underline {
+        background-color: $color1;
+    }
+    .mat-form-field-ripple {
+        background-color: $color1;
+    }
+    .mat-form-field-required-marker {
+        color: $color1;
+    }
+    &.mat-focused {
+        .mat-form-field-label {
+            color: $color2;
+        }
+        .mat-form-field-ripple {
+            background-color: $color2;
+        }
+        .mat-form-field-required-marker {
+            color: $color2 !important;
+        }
+        .mat-input-element {
+            color: $color2;
+        }
+    }
+}
+
+
+::ng-deep {
+    .mat-radio-button.mat-accent .mat-radio-inner-circle{
+        background-color: $color2;
+      
+    }
+    .mat-radio-outer-circle {
+        border-color: $color2;
+    } 
+
+    .mat-select-arrow {
+        color: $color1;
+    }
+    
+    .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+        color: $color2;
+    }
+}
+    
+
+
+
+.text-radio {
+    color: $color1;
+    padding: 0 10px 0 10px;
+    &.size{
+        font-size:1.2rem;
+    }
+}
+
+.container {
+    background: rgba(0, 0, 0, .9);
+}
+
+.example-button-container{
+    margin-bottom: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+}
+.mat-icon.trash{
+    color: red;
+    cursor: pointer;
+}
+.mat-raised-button.mat-primary{
+    width: 100%;
+    color: $color3;
+    background-color: $color2;
+    &:disabled{
+        opacity: .5;
+
+    }
+}

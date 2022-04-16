@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="row welcome">
+        <div class="col-12 text-center">
+            <h1><span>Bienvenido</span> a mi Portal!</h1>
+        </div>
+        <div class="col-12 text-center">
+            <h4>Nos podrías indicar tu nombre</h4>
+        </div>
+
+        <div class="col-12 text-center">
+            <button mat-stroked-button color="primary"  (click)="openDialog()">Escribe tu nombre</button>
+        </div>
+    </div>
+    <div class="row welcome-name"  *ngIf="nombreIngresado">
+        <div class="col-12 text-center">
+            <h4>El nombre ingresado es: <span>{{ nombreIngresado | cambioLetras}}</span></h4>
+        </div>
+    </div>
+</div>

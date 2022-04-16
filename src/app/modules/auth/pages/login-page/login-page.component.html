@@ -1,0 +1,52 @@
+<div class="logIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12
+                        col-md-6 offset-md-3 
+                        col-lg-4 offset-lg-4">
+                <h1>IESySTEM</h1>
+            </div>
+        </div>
+        <form (ngSubmit)="sendDataLogin()" 
+                [formGroup]="formLogin"
+                autocomplete="off">
+            <div class="row">
+                <div class="col-sm-12
+                            col-md-6 offset-md-3 
+                            col-lg-4 offset-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Usuario</mat-label>
+                        <input matInput formControlName="username">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12
+                            col-md-6 offset-md-3 
+                            col-lg-4 offset-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput formControlName="password">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12
+                            col-md-6 offset-md-3 
+                            col-lg-4 offset-lg-4">
+                    <div *ngIf="!session.exito" class="message-error">
+                        <small>{{session.mensaje}}</small>
+                    </div>
+                </div>
+
+                <div class="col-sm-12
+                            col-md-6 offset-md-3 
+                            col-lg-4 offset-lg-4">
+                    <button  mat-raised-button color="primary"
+                            type="submit" 
+                            [disabled]="formLogin.invalid">
+                        Log In
+                    </button>
+                </div>
+            </div>
+            
+        </form>
+            
+    </div>
+</div>

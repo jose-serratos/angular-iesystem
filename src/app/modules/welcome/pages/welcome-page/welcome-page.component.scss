@@ -1,0 +1,80 @@
+h1,h4{
+    color: #fff;
+}
+h1 span , h4 span {
+    color:  #FFD900;;
+}
+.text-center {
+text-align: center;
+}
+
+.welcome {
+    margin-top: 30px
+}
+
+button.mat-primary {
+    color: #fff;
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+    border-color: #fff;
+    margin-bottom: 30px;
+}
+
+.welcome-name {
+    height: 50px;
+    margin: 15px;
+}
+
+$color1: #fff;
+$color2: #FFD900;
+$color3: #000;
+$font-size-1: 1.2rem;
+
+//===================================================================
+//                      Input angular material
+//===================================================================
+
+::ng-deep .mat-form-field {
+    width: 100%;
+    font-size: $font-size-1;
+    
+    .mat-form-field-label {
+        color: $color1;
+    }
+    .mat-input-element {
+        color: $color1;
+    }
+    
+    .mat-form-field-underline {
+        background-color: $color1;
+    }
+    .mat-form-field-ripple {
+        background-color: $color1;
+    }
+    .mat-form-field-required-marker {
+        color: $color1;
+    }
+    &.mat-focused {
+        .mat-form-field-label {
+            color: $color2;
+        }
+        .mat-form-field-ripple {
+            background-color: $color2;
+        }
+        .mat-form-field-required-marker {
+            color: $color2 !important;
+        }
+        .mat-input-element {
+            color: $color2;
+        }
+    }
+}
+
+::ng-deep .mat-raised-button.mat-primary{
+    color: $color3;
+    background-color: $color2;
+    &:hover{
+        color: rgba(0, 0, 0, .7);
+    }
+}

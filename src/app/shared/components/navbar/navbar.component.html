@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+            <span>IES SySTEM</span>
+            <div class="space"></div>     
+            <a [routerLink]="item.router" *ngFor="let item of linksMenu" mat-button>{{item.name}}</a>
+            <a mat-raised-button color="primary" (click)="logout()" >Cerrar Sesión</a>
+            
+
+  </mat-toolbar>
+
